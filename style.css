@@ -7,6 +7,7 @@
     6. Project Page
     7. Resume Page
     8. Contact Page
+    9. Responsive Design
 */
 
 
@@ -21,6 +22,10 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .container {
@@ -101,7 +106,7 @@ nav ul {
     justify-content: flex-end;
     height: 2rem;
 }
-
+    
 
 nav li {
     display: inline-block;
@@ -134,6 +139,7 @@ nav a:hover {
 #hero-title p {
     font-family: var(---heading-font);
     font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 
 .secondary-header {
@@ -184,8 +190,12 @@ nav a:hover {
 
 .dev-icons {
     margin-top: 6rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.small-icon {
+    display: none;
 }
 
 .game-directions {
@@ -209,9 +219,10 @@ nav a:hover {
 }
 
 .featured-work {
-    width: 100%;
     justify-content: center;
+    margin: 0 auto;
     gap: 2rem;
+    width: 90%;
 }
 
 .project-card {
@@ -240,8 +251,6 @@ nav a:hover {
     height: 100%;
     width: 100%;
 }
-
-
 
  /* 5. Project Cards */
 
@@ -326,4 +335,62 @@ nav a:hover {
 
 #contact-page a:hover {
     color: #c950d2;
+}
+
+/* 9. Responsive Design */
+
+@media only screen and (max-width: 700px) {
+ /* Nav Bar */
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav li {
+        text-align: center;
+        flex: 1 1 25%
+    }
+    nav a {
+        width: 100%;
+        font-size: 1.25rem;
+        height: 85%;
+    }
+
+/* Hero */
+    #hero-title h1 {
+        font-size: 6rem;
+        margin-top: 20%;
+    }
+    #hero-title p {
+        font-size: 4rem;
+    }
+    /* Featured Projects (index.html) */
+    .featured-work {
+        flex-wrap: wrap;
+    }
+    .project-card {
+        height: 130px;
+        width: 200x;
+    }
+    .dev-icons {
+        justify-content: space-around;
+    }
+    .small-icon {
+        display: flex;
+    }
+    .large-icon {
+        display: none;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  
+@media only screen and (max-width: 400px) {
+    nav a {
+        font-size: 1rem;
+    }
 }
