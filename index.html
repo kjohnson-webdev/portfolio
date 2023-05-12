@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/1a566f8d2a.js" crossorigin="anonymous"></script>
+    <title>K.J. Webdev</title>
+    <script src="/script.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul class="container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="hero-title">
+                <h1>Hello &#128075</h1>
+                <p>I'm Karl.</p>
+                <p>I design and develop web sites.</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <div class="container overview-container">
+                <div id="design-card" class="container overview-card">
+                    <img class="overview-icon" src="/assets/diamond-icon.png" alt="">
+                    <h3>Designer</h3>
+                    <p>I enjoy creating simple, clean designs optimized for UX.</p>
+                    <h4>DESIGN TOOLS</h4>
+                    <ul>
+                        <li>Procreate</li>
+                        <li>GIMP</li>
+                    </ul>
+                </div>
+
+                <div id="engineer-card" class="container overview-card">
+                    <img class="overview-icon" src="/assets/engineering-icon.png" alt="">
+                    <h3>Frontend Developer</h3>
+                    <p>I like puzzles and problem solving, coding responsive and accessible web applications</p>
+                    <h4>DEV TOOLS</h4>
+                    <ul>
+                        <li>Github</li>
+                        <li>Terminal</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container dev-icons">
+                <i class="fa-brands fa-html5 fa-6x" style="color: #c950d2;">
+                </i>
+                <i class="fa-brands fa-css3-alt fa-6x" style="color: #c950d2;">
+                </i>
+                <i id="winner" class="fa-brands fa-square-js fa-6x" style="color: #c950d2;">
+                </i>
+                <i class="fa-brands fa-github fa-6x" style="color: #c950d2;">
+                </i>
+                <i class="fa-solid fa-terminal fa-6x" style="color: #c950d2;"></i>
+            </div>
+        </section>
+        <section id="project-highlights">
+            <h2 id="featured-heading">Featured Work</h2>
+            
+            <div class="container featured-work">
+                <div class="project-card" id="project-styleGuide">
+                    <a href="https://github.com/kjohnson-webdev/wedding_site_style_guide" class="project-link">
+                    <h3>Site Style Guide</h3>
+                    </a>
+                </div>
+
+                <div class="project-card" id="project-clubSite">
+                    <a href="https://github.com/kjohnson-webdev/responsive-club" class="project-link">
+                    <h3>Responsive Website</h3>
+                    </a>
+                </div>
+
+                <div class="project-card" id="project-cheatSheet">
+                    <a href="https://github.com/kjohnson-webdev/cheat_sheet" class="project-link">
+                    <h3>HTML/CSS Cheatsheet</h3>
+                    </a>
+                </div>
+            </div>
+            <a class="main-button" href="/projects.html">See More...</a>
+        </section>
+        <section id="js-game">
+            <h2>JS Game</h2>
+            <p class="game-directions">Find the icon for the tech that powers this game!</p>
+            <h4 id="game-feedback"></h4>
+        </section>
+    </main>
+    <footer>
+        <p>&copy Karl Johnson 2023</p>
+    </footer>
+</body>
+</html>
